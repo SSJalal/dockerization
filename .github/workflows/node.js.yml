@@ -33,11 +33,11 @@ jobs:
 
     - name: build docker image
       run: |
-          docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/my-node-app:latest .
+          docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/testing .
 
     - name: Push Docker image
       run: |
-        docker push ${{ secrets.DOCKER_HUB_USERNAME }}/my-node-app:latest
+        docker push ${{ secrets.DOCKER_HUB_USERNAME }}/testing
 
         
     
